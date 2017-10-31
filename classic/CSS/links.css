@@ -1,0 +1,14 @@
+dl {
+  margin:20px 5px;
+}
+
+dt {
+  font-weight:bold;
+  border:1px solid #777;
+  width:50%;
+  margin:7px auto 4px auto;
+}
+
+dd {
+  margin:0;
+}

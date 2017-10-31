@@ -1,0 +1,122 @@
+/*
+body background-color:#b2ac96;
+section background-color:#303030;
+*/
+img { border: 0; } /* Remove border when inside `a` element in IE 8/9/10. */
+h1 { font-size: 1.9em; margin: 10px auto; width:90%; } /* override default browser settings */
+h2 { margin:5px 0; } /* override default browser settings */
+
+body {
+  font-family:Tahoma, sans-serif;
+  text-align:center;
+  background-color:#b2ac96;
+  margin:8px 0;
+}
+
+section {
+  border:6px solid black;
+  width:75%;
+  margin-left:auto; margin-right:auto; /* center the box element */
+  background-color:#303030;
+  color:LightGray;
+}
+
+/* a links in section style */
+section a:link, section a:visited {
+  color:#e4a769;
+  text-decoration:none;
+}
+
+section a:hover {
+  color:#e4a769;
+  text-decoration:underline;
+}
+
+
+/* nav menu style */
+nav#main {
+  background-color:#303030;
+  padding:5px 0;
+  margin:18px 0;
+}
+
+ul#main-nav {
+  margin:0;
+  padding:0;
+}
+
+li.main-nav, a {
+  display:block;
+}
+
+@media (min-width:450px) { /* for bigger screens */
+  li.main-nav { display:inline-block;}
+  a { display:inline; }
+}
+
+a.main-nav {
+  font-size:1.5em;
+  font-weight:bold;
+  text-decoration:none;
+  color:#f16610;
+  background-color:#303030;
+  padding:5px;
+  margin-left:2px;
+}
+
+a.main-nav:hover {
+  background-color:#3d3d3d;
+}
+
+a.main-nav.active {
+  background: #222;
+}
+
+
+/* bottom addresses style */
+address > ul > li {
+  display:inline;
+  background-color:#353535;
+}
+
+address a:link, address a:visited {
+  color:gray;
+  text-decoration:none;
+  padding:1px 4px;
+}
+
+address a:hover {
+  color:gray;
+  text-decoration:underline;
+  padding:1px 4px;
+  background-color:#404040;
+}
+
+
+/* For all pages that aren't the main one - the thing with the codeguru-xtreme "ad" */
+#xtreme { margin:0; }
+
+@media (min-width:650px) {
+  #xtreme {
+    position:fixed;
+    bottom:0;
+    left:0;
+    height:55px;
+  }
+}
+
+
+/* "back to the top" button */
+.up-elevator {
+  position:fixed;
+  right:10px;
+  bottom:15px;
+  display:none;
+  margin:0;
+  cursor: pointer;
+}
+
+.up-elevator figcaption {
+  font-size:0.8em;
+  color:azure;
+}

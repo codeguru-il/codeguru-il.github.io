@@ -1,0 +1,96 @@
+﻿<html>
+
+<head>
+
+<title> קודגורו אקסטרים - בניית השורדים הנוספים והרצתם</title>
+<meta name="keywords" content="competition, computers, hebrew, תחרות, תחרות מחשבים, פרסים, מתמטיקה, וויצמן, ויצמן, מכון ויצמן, מכון וויצמן, המרכז הבינתחומי, בינתחומי, צמ&quot;ד, חינם">
+<meta name="description" content="תחרות המחשבים והמתמטיקה המובילה בישראל לצעירים. קחו חלק באתגר וזכו בפרסים יקרי ערך.">
+<LINK REL=STYLESHEET HREF="cgx.css" TYPE="text/css">
+
+
+<!-- Start of google track Code -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-212070-1";
+urchinTracker();
+</script>
+<!-- End of google track Code -->
+
+
+</head>
+<body>
+
+<div align="center">
+<div class="pagebox">
+
+<div class="top">
+<br>
+
+
+<div id="navcontainer">
+<ul id="navlist">
+<li><a href="/CS/forums/5/ShowForum.aspx">הפורום</a></li>
+<li><a href="media.htm">בתקשורת</a></li>
+<li><a href="archive.htm">ארכיון</a></li>
+<li><a href="tech.htm">המדריך</a></li>
+<li><a href="about.htm">על התחרות</a></li>
+</ul>
+</div>
+
+</div>
+
+
+
+
+<div class="tohen">
+
+<h1 class="bodtite">הכירו: השורדים</h1>
+<p>לא צריך להיות גורו-אסמבלי בשביל לכתוב שורד cgx (אם כי אין ספק שזה עוזר :) - הדרך הקלה ביותר "להכנס לעניינים" היא לקמפל בעצמכם את שורדי הדוגמא.</p>
+<p>ראשית, עליכם להצטייד באסמבלר ("קומפיילר" של שפת אסמבלי). האסמבלר ימיר את השורד מקוד אסמבלי "קריא", לקוד בשפת מכונה שניתן להריץ במנוע המשחק. שלושה אסמבלרים מובילים הם MASM של מיקרוסופט, TASM של בורלנד ופרויקט הקוד הפתוח
+NASM.
+את
+nasm
+אפשר להתקין מהקישור
+<a href="http://www.nasm.us/pub/nasm/releasebuilds/2.09/win32/nasm-2.09-installer.exe">הזה</a>.</p>
+
+<p>אנו נשתמש באסמבלר בשם A86, אותו ניתן להוריד בחינם <a href="http://eji.com/a86.zip">כאן</a>. כדי "לקמפל" קובץ קוד אסמבלי בשם survivor.asm, כל שעליכם לעשות הוא להריץ ב-command line את הפקודה הבאה (שימו לב: יש להריץ מהספריה בה הותקן A86, או להכניס את הספרייה הנ"ל ל-path):</p>
+<p><code>A86 survivor.asm</code></p>
+
+<p>לאחר קימפול מוצלח, יווצר באותה התיקייה קובץ חדש בשם survivor.com. כדי שמנוע המשחק יכיר את השורד החדש וידע לשלב אותו במשחק הבא שתריצו, יש להעתיק את הקובץ שנוצר לספריה בשם survivors (תחת ספרית מנוע המשחק). בשלב זה, תוכלו גם לשנות את סיומת הקובץ מ-com לסיומת ריקה. </p>
+
+<p>תוכלו להוריד 
+<a href="https://github.com/codeguru-il/corewars8086-survivors">כאן</a>
+ קוד של מספר שורדי דוגמא נוספים, ולקמפל אותם בשיטה שתיארנו למעלה.
+תוכלו אף להסתכל על קוד האסמבלי של השורדים, להבין מה הם עושים ואולי אף לשפר אותם.
+הקוד מתועד היטב, ומתכנתים מתחילים יכולים להתייחס אליו כאל שיעור האסמבלי הראשון שלהם...</p>
+
+<p>כשתסיימו, אתם מוזמנים להתקדם לשלב הבא: <a href="tech3.htm">כתיבת השורד שלכם</a>!</p>
+
+<ul style="width:330px;"></ul>
+
+</div>
+
+
+
+<div class="sidebar">
+<center>
+<img src="bug2.jpg" width="200" height="111"></center>
+
+<h1 class="sidetite">שורדי האקסטרים</h1>
+<p class="sidebartext">
+ העיפו מבט 
+<a href="https://github.com/codeguru-il/corewars8086-survivors" style="text-decoration: none;">בשורדים של התחרויות הקודמות</a>
+ לרעיונות מעניינים לאסטרטגיה.
+</span>
+</div>
+
+
+</div>
+
+
+
+</div>
+
+</body>
+</html>

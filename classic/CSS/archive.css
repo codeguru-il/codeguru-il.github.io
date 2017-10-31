@@ -1,0 +1,34 @@
+#media {
+  padding:0;
+}
+
+#media li {
+  border:2px solid white;
+  margin:0 auto;
+  list-style-type:none;
+  width:70%;
+}
+
+#media p {
+  margin:8px;
+}
+
+
+#win {
+  text-decoration:underline;
+}
+
+
+.past-competitions {
+  margin:20px 0;
+}
+
+.past-competitions p{
+  margin:3px 0;
+}
+
+.past-competitions img {
+  height:100px;
+  width:150px;
+  border-radius:5px;
+}

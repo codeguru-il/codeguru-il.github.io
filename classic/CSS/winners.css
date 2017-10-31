@@ -1,0 +1,50 @@
+.winners {
+  width:95%;
+}
+@media (min-width:570px) {
+  .winners { width:400px; }
+}
+
+hr { margin:15px 0; }
+
+
+/* ************************************ */
+/* ************* places *************** */
+/* ************************************ */
+.places p {
+  font-size: 1.4em;
+  color: black;
+  margin: 0;
+  line-height: 50px; /* vertically align the text in the div */
+}
+.others p { font-size: 1.1em; }
+
+.places {
+  min-height: 50px;
+  margin: 5px auto;
+}
+
+
+.first {
+  max-width:150px;
+  background: gold; /* fallback */
+  background: linear-gradient(#ffdb1a, #ccac00);
+}
+
+.second {
+  max-width:200px;
+  background: silver; /* fallback */
+  background: linear-gradient(#cdcdcd, #a7a7a7);
+}
+
+.third {
+  max-width:250px;
+  background: #cd7f32; /* fallback */
+  background: linear-gradient(#cd7f32, #905923);
+}
+
+.others {
+  max-width:500px;
+  background: white;
+  color: black;
+}

@@ -1,0 +1,28 @@
+#logos {
+  background-color:white;
+  width:70%;
+  margin: auto;
+}
+#logos img {
+  width:150px;
+}
+#logos li {
+  display:inline;
+}
+
+@media (min-width:785px) {
+    #logos { width:70%; }
+    #logos img { width:200px; }
+}
+
+@media (min-width:985px) {
+    #logos { width:70%; }
+    #logos img { width:250px; }
+}
+
+@media (min-width:1365px) {
+    #logos { width:50%; }
+    #logos img { width:250px; }
+}
+
+p { margin:15px; }

@@ -1,0 +1,60 @@
+/*
+body background-color:#b2ac96;
+section background-color:#303030;
+*/
+
+/* Updates style */
+#updatesBox {
+  width:70%;
+	height:220px;
+  overflow:auto;
+	border:4px solid white;
+  margin:15px auto;
+	text-align:right;
+  position:relative;
+}
+
+#touch {
+  width:50%;
+  margin-left:auto; margin-right:auto; /* center the box element */
+}
+
+#tagline {
+max-width:95%;
+}
+
+@media (min-width:550px) {
+  #updatesBox { width:55%; }
+  #thanks { width:55%; }
+}
+
+
+@media (min-width:1050px) {
+#updatesBox { width:30%; }
+}
+
+
+#updates {
+	margin:0 10px 0 0;
+  position:absolute;
+}
+
+#updates dt {
+	margin-top:4px;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+#updates dd {
+	margin-bottom:4px;
+}
+
+/* thanks title style */
+#thanks {
+  width:77%;
+  margin-left:auto; margin-right:auto; /* center the box element */
+  font-size:1.2em;
+  font-weight:bold;
+}
+
+#thanks > a {color:#f59458;}
