@@ -1,7 +1,7 @@
 $(function() {
   // Add 'back to the top' button to html with suitable ID and class [that will not show the button]
   // create button
-  var button = $('<figure class="up-elevator"><img src="Images/up.png" alt="מעלית למעלה?" title="מעלית למעלה?"><figcaption>מעלית<br>למעלה?</figcaption></figure>');
+  var button = $('<figure class="up-elevator"><img src="images/up.png" alt="מעלית למעלה?" title="מעלית למעלה?"><figcaption>מעלית<br>למעלה?</figcaption></figure>');
   button.appendTo($('footer'));
   
   
