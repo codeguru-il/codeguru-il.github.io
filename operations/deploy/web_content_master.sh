@@ -24,3 +24,4 @@ else
 	gcloud source repos clone web_content
 fi
 gsutil rsync -c -d -r -x '^[.]git.*' web_content/static gs://static.codeguru.co.il/
+echo "Done"
