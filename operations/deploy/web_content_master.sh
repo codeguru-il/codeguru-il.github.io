@@ -3,8 +3,9 @@
 set -x
 cd /tmp
 
+PROJECT_ID="cdgws-183419"
 MASTER="On branch master"
-HTTPS_URL="https://source.developers.google.com/p/cdgws-183419/r/web_content"
+HTTPS_URL="https://source.developers.google.com/p/${PROJECT_ID}/r/web_content"
 
 if [ -d web_content ]; then
 	pushd web_content
@@ -21,7 +22,7 @@ if [ "${SHOULD_BE_MASTER}" = "${MASTER}" ] && [ "${HTTPS_URL_COUNT}" -eq 2 ]; th
 	popd
 else
 	rm -rf web_content
-	gcloud source repos clone web_content
+	gcloud source repos clone web_content --project "${PROJECT_ID}"
 fi
 gsutil rsync -c -d -r -x '^[.]git.*' web_content/static gs://static.codeguru.co.il/
 echo "Done"
