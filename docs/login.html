@@ -1,67 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        body {
-            background: #f4f4f4;
-            font-family: Arial, sans-serif;
-            display: flex;
-            height: 100vh;
-            align-items: center;
-            justify-content: center;
-        }
-        .login-container {
-            background: #fff;
-            padding: 2rem 2.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-            width: 320px;
-        }
-        .login-container h2 {
-            margin-bottom: 1.5rem;
-            text-align: center;
-            color: #333;
-        }
-        .login-container label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: #555;
-        }
-        .login-container input[type="text"],
-        .login-container input[type="password"] {
-            width: 100%;
-            padding: 0.5rem;
-            margin-bottom: 1.2rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-        .login-container button {
-            width: 100%;
-            padding: 0.6rem;
-            background: #0078d4;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-        .login-container button:hover {
-            background: #005fa3;
-        }
+      body {
+        background: #f4f4f4;
+        font-family: Arial, sans-serif;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+      .login-container {
+        background: #fff;
+        padding: 2rem 2.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        width: 320px;
+      }
+      .login-container h2 {
+        margin-bottom: 1.5rem;
+        text-align: center;
+        color: #333;
+      }
+      .login-container label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #555;
+      }
+      .login-container input[type="text"],
+      .login-container input[type="password"] {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1.2rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+      .login-container button {
+        width: 100%;
+        padding: 0.6rem;
+        background: #0078d4;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      .login-container button:hover {
+        background: #005fa3;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <form class="login-container" autocomplete="off">
-        <h2>Login</h2>
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" required autofocus>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Log In</button>
+      <h2>Login</h2>
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" required autofocus />
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required />
+      <button type="submit">Log In</button>
+      <script>
+        const USED_URL = "http://localhost:3000";
+        document
+          .querySelector(".login-container")
+          .addEventListener("submit", async function (e) {
+            e.preventDefault();
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            try {
+              const response = await fetch(`${USED_URL}/api/users/login`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email, password }),
+                mode: "cors",
+              });
+              if (response.ok) {
+                // Redirect or show success
+                alert("Logined successfully!");
+              } else {
+                alert("Logined failed");
+              }
+            } catch (err) {
+              alert("Error connecting to server");
+            }
+          });
+      </script>
     </form>
-</body>
+  </body>
 </html>
