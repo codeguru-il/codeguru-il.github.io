@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Content-Language" content="he" />
+    <meta http-equiv="Content-Language" content="en" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Code Guru</title>
+    <link rel="stylesheet" href="style.css" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(["_setAccount", "UA-27174243-1"]);
@@ -24,43 +25,29 @@
       })();
     </script>
   </head>
-  <body style="background-color: #082d36">
-    <table border="0" width="100%" height="100" cellspacing="0" cellpadding="0">
-      <tr>
-        <td align="center" style="width: 100%; height: 600">
-          <p style="text-align: center" dir="rtl">
-            <map id="CGMap" name="CGMap">
-              <area
-                alt="Codeguru"
-                coords="0, 61, 255, 240"
-                shape="rect"
-                href="classic/"
-              />
-              <area
-                alt="Codeguru Xtreme"
-                coords="303, 36, 502, 274"
-                shape="rect"
-                href="Xtreme/"
-              />
-            </map>
-            <img
-              style="border: 0; width: 532; height: 336"
-              alt="תחרויות קודגורו"
-              src="front.jpg"
-              usemap="#CGMap"
-            />
-            <br />
-            <span style="color: #3e6d7b; font-family: Arial; font-size: smaller"
-              >בחרו את התחרות שלכם.</span
-            >
-            <br />
-            <a
-              href="https://spreadsheets1.google.com/viewform?hl=iw&hl=iw&formkey=dE0wY1ZUVWg4VUZWNXRmTlBydFFmRGc6MQ#gid=0"
-              >להתנדב לעזרה לתחרות - לחצו כאן</a
-            >
-          </p>
-        </td>
-      </tr>
-    </table>
+  <body dir="rtl">
+    <div class="container">
+      <header>
+        <h1>ברוכים הבאים לקודגורו</h1>
+      </header>
+      <main>
+        <section class="logo-section">
+          <a href="Xtreme/" class="logo-item">
+            <img src="/images/xtreme.png" alt="Xtreme logo" />
+            <span>קודגורו אקסטרים</span>
+          </a>
+          <a href="classic/" class="logo-item">
+            <img src="/images/code_guru.png" alt="Code Guru logo" />
+            <span>קודגורו</span>
+          </a>
+        </section>
+        <p class="call-to-action">בחר את התחרות שלך</p>
+        <a
+          href="https://spreadsheets1.google.com/viewform?hl=iw&hl=iw&formkey=dE0wY1ZUVWg4VUZWNXRmTlBydFFmRGc6MQ#gid=0"
+          class="volunteer-link"
+          >לחץ כאן כדי להתנדב לעזור לתחרות</a
+        >
+      </main>
+    </div>
   </body>
 </html>
